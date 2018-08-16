@@ -39,6 +39,7 @@ A été intégrée à l'application le template Bootstrap 'Creative' (https://bl
 - Les opérations ont été effectuées avec la `gem twitter`
 - 3 bots twitter ont été réalisés qui envoient un message aux 10 derniers followers des pages sélectionnées
 
+
 **LP 1 : Général**  
 Catégorie générale ayant pour but de toucher un maximum de monde, on trouve notamment dans les pages sélectionnées Pôle Emploi et des pages d'entrepreneurs
 
@@ -47,6 +48,7 @@ Les pages sélectionnées sont des pages tech/développement dont OpenClassrooms
 
 **LP 3 : Strasbourg city**  
 Les pages sélectionnées sont des pages locales (magazines locaux, salles de concerts...)
+
 
 
 ##### Scheduler  
@@ -59,6 +61,9 @@ Lorsqu'un visiteur s'inscrit à la newsletter via un des formulaires sur le site
 
 ##### Scheduler  
 Les personnes inscrites reçoivent un mail une fois par semaine grâce au Heroku Scheduler.
+
+
+
 
 -----------------------
 #### Analyse des metrics  
