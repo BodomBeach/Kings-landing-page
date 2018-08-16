@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'users#new'
-  get '/thankyou', to: 'users#thankyou'
-  post 'users#new', to: 'users#create'
+  root 'creatives#index'
+  get 'creatives#index', to: 'users#new', as: 'form'
+  get '/thankyou', to: 'creatives#thankyou'
+  post 'creatives#index', to: 'users#create'
+
 end

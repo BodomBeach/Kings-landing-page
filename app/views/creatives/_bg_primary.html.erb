@@ -1,0 +1,40 @@
+<section class="bg-primary" id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <h2 class="section-heading">The Hacking Project dans ton inbox !</h2>
+        <p>Dates des prochains workshops dans ta ville, les news de THP et bien plus ...</p>
+
+        <hr class="light">
+
+            <%= form_for(:user, url:form_path) do |u| %>
+
+              <div class="form-group">
+                <%= u.text_field :first_name, class: "form-control", placeholder: "Ton prénom" %><br>
+              </div>
+
+              <div class="form-group">
+                <%= u.text_field :last_name, class: "form-control", placeholder: "Ton nom" %><br>
+              </div>
+
+              <div class="form-group">
+                  <%= u.text_field :email, class: "form-control", placeholder: "Ton email" %><br>
+              </div>
+
+                  <%= u.submit "Je m'abonne", class: "btn btn-default btn-xl mb-2" %>
+
+            <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- <form class="form-inline text center"> <div class="form-group mx-sm-3 mb-2"> <input type="password" class="form-control" placeholder="Prénom"> </div> <div class="form-group mx-sm-3 mb-2"> <input type="password" class="form-control"
+placeholder="Nom"> </div> <div class="form-group mx-sm-3 mb-2"> <input type="password" class="form-control" placeholder="Password"> </div> <button type="submit" class="btn btn-primary mb-2">Confirm identity</button> </form> -->
+
+<!-- <form class="" action="index.html" method="post"> <input class="input" type="text" name="" value="Ton prénom"> <input class="input" type="text" name="" value="Ton nom"> <input class="input" type="email" name="" value="Ton email"> <a href="#"
+class="btn btn-default btn-xl">Je m'inscris !</a> -->
