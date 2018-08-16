@@ -42,11 +42,11 @@ A été intégrée à l'application le template Bootstrap 'Creative' (https://bl
 **LP 1 : Général**  
 Catégorie générale ayant pour but de toucher un maximum de monde, on trouve notamment dans les pages sélectionnées Pôle Emploi et des pages d'entrepreneurs
 
-**LP 2 : Strasbourg city**  
-Les pages sélectionnées sont des pages locales (magazines locaux, salles de concerts...)
-
-**LP 3 : Devs ou apprenti devs**  
+**LP 2 : Devs ou apprenti devs**  
 Les pages sélectionnées sont des pages tech/développement dont OpenClassrooms et Grafikart
+
+**LP 3 : Strasbourg city**  
+Les pages sélectionnées sont des pages locales (magazines locaux, salles de concerts...)
 
 
 ##### Scheduler  
