@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'creatives#index'
- get '/thankyou', to: 'creatives#thankyou'
+  root 'users#new'
+  post 'users/new', to: 'users#create'
 end
