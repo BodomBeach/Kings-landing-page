@@ -64,6 +64,7 @@ Les personnes inscrites reçoivent un mail une fois par semaine grâce au Heroku
 #### Analyse des metrics  
 
 Pour l'analyse d'audience de l'application a été utilisé le fameux Google Analytics
+
 ----------------------
 
 ## La team
