@@ -7,4 +7,3 @@
   post '/index', to: 'users#create', as: 'form'
 end
 
-end
