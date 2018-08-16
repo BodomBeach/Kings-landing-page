@@ -12,7 +12,7 @@ class UsersController < ApplicationController
       redirect_to root_url
     else
       flash[:error] = "Tous les champs ne sont pas correctement renseignés"
-      redirect_to root_url 
+      redirect_to '/thankyou'
     end
   end
 

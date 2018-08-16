@@ -1,7 +1,6 @@
 require 'test_helper'
 
-class UserTest < ActiveSupport::TestCase
-
+class SubscriptionTestTest < ActionDispatch::IntegrationTest
   def setup
     @user = User.create(first_name: "Michel", last_name: "Sardou", email: "michel@yahoo.com")
   end
@@ -22,4 +21,8 @@ class UserTest < ActiveSupport::TestCase
     assert_not user.valid?
   end
 
+  test "email should lead to subscription page" do
+    post '/', params: {"user"=>{"first_name"=>"Bertin", "last_name"=>"Nicolas", "email"=>"nicolas.bertin0@gmail.com"}}
+    assert_redirected_to "/thankyou"
+  end
 end

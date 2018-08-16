@@ -1,3 +1,5 @@
+
+
 class MailJetController < ApplicationController
 
   def initialize
