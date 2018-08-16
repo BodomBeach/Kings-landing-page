@@ -1,32 +1,41 @@
-<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-      <%= form_for @user, url: {controller: "users", action: "create"} do |u| %>
+<%= render 'navbar' %>
+<%= render 'header' %>
+<section class="bg-primary" id="about">
+  <div class="container">
+    <div class="row">
 
-        <div class="form-row">
-          <div class="col-12 col-md-9 mb-2 mb-md-0">
-            <%= u.text_field :first_name, class: "form-control form-control-lg", placeholder: "Enter your firstname..." %><br>
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+
+        <h2 class="section-heading">The Hacking Project dans ton inbox !</h2>
+
+        <p>Dates des prochains workshops dans ta ville, les news de THP et bien plus ...</p>
+
+        <hr class="light">
+
+        <form class="form-inline text-center">
+
+          <div class="form-group">
+            <input type="text" class="input form-control" placeholder="Ton prénom">
           </div>
 
-          <div class="col-12 col-md-3">
+          <div class="form-group">
+            <input type="text" class="input form-control" placeholder="Ton nom">
           </div>
-        </div>
 
-        <div class="form-row">
-          <div class="col-12 col-md-9 mb-2 mb-md-0">
-            <%= u.text_field :last_name, class: "form-control form-control-lg", placeholder: "Enter your lastname..." %><br>
+          <div class="form-group">
+            <input type="text" class="input form-control" placeholder="Ton email">
           </div>
-          <div class="col-12 col-md-3">
-          </div>
-        </div>
 
-        <div class="form-row">
-          <div class="col-12 col-md-9 mb-2 mb-md-0">
-            <%= u.text_field :email, class: "form-control form-control-lg", placeholder: "Enter your Email..." %><br>
-          </div>
-        </div>
+          <button type="submit" class="btn btn-default btn-xl mb-2">Je m'abonne !</button>
 
-        <div class="form-row">
-          <div class="col-12 col-md-9">
-            <%= u.submit "Submit !" %>
-          </div>
-        </div>
-  <% end %>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<%= render 'services' %>
+<%= render 'call_to_action' %>
+
+<!-- <%= render 'portfolio' %> -->
+
+<%= render 'contact' %>

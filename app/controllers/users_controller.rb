@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
 
+  def thankyou
+  end
+
   def new
     @user = User.new
   end
-
 
   def create
     @user = User.create(user_params)

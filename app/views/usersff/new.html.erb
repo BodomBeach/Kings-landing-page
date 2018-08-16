@@ -1,0 +1,32 @@
+<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+      <%= form_for @user, url: {controller: "users", action: "create"} do |u| %>
+
+        <div class="form-row">
+          <div class="col-12 col-md-9 mb-2 mb-md-0">
+            <%= u.text_field :first_name, class: "form-control form-control-lg", placeholder: "Enter your firstname..." %><br>
+          </div>
+
+          <div class="col-12 col-md-3">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-12 col-md-9 mb-2 mb-md-0">
+            <%= u.text_field :last_name, class: "form-control form-control-lg", placeholder: "Enter your lastname..." %><br>
+          </div>
+          <div class="col-12 col-md-3">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-12 col-md-9 mb-2 mb-md-0">
+            <%= u.text_field :email, class: "form-control form-control-lg", placeholder: "Enter your Email..." %><br>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-12 col-md-9">
+            <%= u.submit "Submit !" %>
+          </div>
+        </div>
+  <% end %>

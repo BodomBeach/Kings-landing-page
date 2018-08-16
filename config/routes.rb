@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'users#new'
-  post 'users/new', to: 'users#create'
+  get '/thankyou', to: 'users#thankyou'
+  post 'users#new', to: 'users#create'
 end
