@@ -6,4 +6,11 @@ class CreativesController < ApplicationController
 
   def thankyou
   end
+
+  def index2
+  end
+
+  def index3
+  end
+  
 end
