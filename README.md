@@ -1,5 +1,5 @@
-# Growth Hacking et Landing Page - THP Projet du 16 août 2018
-# Advanced Landing Pages
+# Growth Hacking et Landing Pages THP
+# Projet du 16 août 2018
 
 ## En local
 
@@ -59,11 +59,13 @@ Lorsqu'un visiteur s'inscrit à la newsletter via un des formulaires sur le site
 
 ##### Scheduler  
 Les personnes inscrites reçoivent un mail une fois par semaine grâce au Heroku Scheduler.
+
 -----------------------
 #### Analyse des metrics  
+
+Pour l'analyse d'audience de l'application a été utilisé le fameux Google Analytics
 ----------------------
-#### Tests
-----------------------
+
 ## La team
 
 Ce projet a été réalisé avec ❤️  par :

@@ -14,6 +14,12 @@ task :bot_twitter_dev => :environment do
   puts "done."
 end
 
+# require 'date'
+# task :mailer => :environment do
+#   if Date.today.wday.zero?
+#   MailJetController.new.perform(@user.email)
+# end
+
 # task :send_reminders => :environment do
 #   User.send_reminders
 # end
