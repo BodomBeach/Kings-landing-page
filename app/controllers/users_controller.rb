@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+layout "creative"
   def new
     @user = User.new
   end
