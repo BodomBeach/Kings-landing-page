@@ -4,10 +4,11 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+
   def create
     @user = User.create(user_params)
     if @user.save
-      UserMailer.send_mail(@user.email).deliver_now
+      MailJetController.new.perform(@user.email)
       flash[:success] = "Inscription validée, un email de confirmation vous a été envoyé"
       redirect_to 'users/new'
     else
