@@ -12,7 +12,8 @@ Mais pour des raisons de clés d'API et de configuration action_mailer, je vous 
 
 ## Sur heroku
 
-...Rendez-vous donc sur ........ pour admirer le boulot !
+...Rendez-vous donc sur https://king-landing-pages-thp.herokuapp.com/ pour admirer le boulot !
+Ou encore sur https://king-landing-pages-thp.herokuapp.com/index2 ou https://king-landing-pages-thp.herokuapp.com/index3 parce que oui il y a 3 landing pages !
 
 ## L'application
 
