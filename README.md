@@ -14,33 +14,42 @@ Mais pour des raisons de clés d'API et de configuration action_mailer, je vous 
 
 ...Rendez-vous donc sur ........ pour admirer le boulot !
 
-
 ## L'application
 
 ### Ruby on Rails
 
-*Ruby 2.5.1*
+*Ruby 2.5.1*  
 *Rails 5.2.0*
 
 ### Projet
 
 Pas une, pas deux mais TROIS landing pages pour promouvoir ce qui nous occupe bien plus que de raison depuis maintenant 7 semaines : T h e  H a c k i n g  P r o j e c t
----------------------
+
+-----------
+
 #### Front
 
 A été intégrée à l'application le template Bootstrap 'Creative' (https://blackrockdigital.github.io/startbootstrap-creative/) pour le plaisir de vos globes oculaires
----------------------
+
+------------
+
 #### Opérations marketing
 
-Réflexion en amont : ne cibler que des personnes françaises  
+Réalisées avec la `gem twitter`
+Réflexion en amont : ne cibler que des personnes françaises
 
 **Strasbourg city**
+A été réalisé un bot Twitter qui envoie un message aux 10 derniers followers des pages sélectionnées (pages locales, magazines locaux, salles de concerts etc.)  
 
 **Devs ou apprenti devs**
 
 **Autres**
+
+##### Scheduler
+Les trois tâches sont programmées grâce au Heroku Scheduler pour se lancer une fois par jour
 -----------------------
 #### Call to action
+##### Scheduler
 -----------------------
 #### Analyse des metrics  
 ----------------------
