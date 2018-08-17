@@ -24,7 +24,7 @@ class TwitterBotDev
               rClient.followers(user).take(3).collect do |follower|
                     next if followers.include? follower.screen_name
                    p "#{follower.screen_name} -- Dev -- #{user}"
-                  rClient.update("@#{tweet.user.screen_name}, tu veux apprendre Ryby on Rails gratuitement ? https://king-landing-pages-thp.herokuapp.com/index2")
+                  rClient.update("@#{follower.screen_name}, tu veux apprendre Ryby on Rails gratuitement ? https://king-landing-pages-thp.herokuapp.com/index2")
                   followers << follower.screen_name
                   sleep(3)
               end
