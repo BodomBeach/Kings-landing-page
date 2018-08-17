@@ -22,10 +22,10 @@ class TwitterBotStrasbourg
     followers = []
 
           strasbourg.each do |user|
-         		  rClient.followers(user).take(10).collect do |follower|
+         		  rClient.followers(user).take(3).collect do |follower|
                     next if followers.include? follower.screen_name
     	             p "#{follower.screen_name} -- Strasbourg"
-    	            #rClient.update("@#{tweet.user.screen_name}, tu veux apprendre à coder gratuitement à Strasbourg ? URL")
+    	            rClient.update("@#{tweet.user.screen_name}, tu veux apprendre à coder gratuitement à Strasbourg ? https://king-landing-pages-thp.herokuapp.com/index3")
                   followers << follower.screen_name
                   sleep(2)
               end

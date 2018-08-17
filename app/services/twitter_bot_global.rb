@@ -18,15 +18,21 @@ class TwitterBotGlobal
 
 
     global = ["Entrepreneur","AFEcreation","BoostElles","pole_emploi","challengehebdo","ScienceFutura"]
+    exp1 = ["", "Salut "]
+    exp2 = ["tu veux","ça te dit d'"]
+    exp3 = ["coder","faire des app webs"]
+    exp4 = ["","gratuitement","pour 0€","dans ta ville"]
+    exp5 = ["", "en groupe"]
      followers = []
 
           global.each do |user|
-              rClient.followers(user).take(10).collect do |follower|
+              rClient.followers(user).take(3).collect do |follower|
                     next if followers.include? follower.screen_name
-                   p "#{follower.screen_name} -- Dev"
-                  #rClient.update("@#{tweet.user.screen_name}, tu veux apprendre à coder gratuitement et en équipe dans ta ville ? URL")
+                   p "#{follower.screen_name} -- Global -- #{user}"
+                  rClient.update("#{exp1.sample}@#{follower.screen_name}, #{exp2.sample} apprendre à #{exp3.sample} #{exp4.sample} #{exp5.sample} ? https://king-landing-pages-thp.herokuapp.com/")
+
                   followers << follower.screen_name
-                  sleep(5)
+                  sleep(15)
               end
              
           end
@@ -35,3 +41,4 @@ class TwitterBotGlobal
    p "========="
   end
 end
+
